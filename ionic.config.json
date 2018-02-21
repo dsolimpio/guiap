@@ -1,8 +1,6 @@
 {
-  "name": "wpress",
-  "app_id": "",
+  "name": "guia",
+  "app_id": "5cd2e155",
   "type": "ionic-angular",
-  "integrations": {
-    "cordova": {}
-  }
+  "integrations": {}
 }
