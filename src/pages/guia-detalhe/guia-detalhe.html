@@ -14,11 +14,12 @@
 
 
 <ion-content padding>
+    <ion-searchbar (ionInput)="getBtns($event)"></ion-searchbar>
   <ion-card *ngFor="let item of items">
-    <ion-item>
+    <ion-card-content>
       <h2 class="title">{{ item.title }}</h2>
       <p *ngIf="item.address !== undefined"><strong><ion-icon name="pin"></ion-icon> Endereço:</strong> {{ item.address }}</p>
-    </ion-item>
+    </ion-card-content>
     <ion-card-content>
       <a href="fb://{{item.facebook}}" *ngIf="item.facebook !== undefined" (click)="share('facebook', item.facebook)" ion-button icon-only color="facebook"><ion-icon name="logo-facebook"></ion-icon></a>
       <a href="twitter://{{item.twitter}}" *ngIf="item.twitter !== undefined" (click)="share('twitter', item.twitter)" ion-button icon-only color="twitter"><ion-icon name="logo-twitter"></ion-icon></a>

@@ -8,10 +8,12 @@ import { AnunciePage } from '../pages/anuncie/anuncie';
 import { TabsPage } from '../pages/tabs/tabs';
 import { GuiaPage } from '../pages/guia/guia';
 import { GuiaDetalhePage } from '../pages/guia-detalhe/guia-detalhe';
+import { AboutPage } from '../pages/about/about';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DataProvider } from '../providers/data/data'; 
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { DataProvider } from '../providers/data/data';
     AnunciePage,
     TabsPage,
     GuiaPage,
-    GuiaDetalhePage
+    GuiaDetalhePage,
+    AboutPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { DataProvider } from '../providers/data/data';
     AnunciePage,
     TabsPage,
     GuiaPage,
-    GuiaDetalhePage
+    GuiaDetalhePage,
+    AboutPage
   ],
   providers: [
     StatusBar,
